@@ -1,0 +1,54 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+.DS_Store
+
+# Directories potentially created on remote AFP share
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+### Sass ###
+.sass-cache/
+dev/assets/css/*.css.map
+dev/assets/css/*.min.css
+
+### JS maps ### 
+dev/assets/js/*.js.map
+dev/assets/js/*.min.js
+
+### Node modules ###
+node_modules/
+
+### Build folder ###
+build/
+prod/
+
+### Resources Sketch folder ###
+resources/sketch/

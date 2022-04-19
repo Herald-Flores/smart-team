@@ -1,0 +1,44 @@
+#call-to-action{
+    background-color: $whiteBlue;
+    background-repeat: no-repeat;
+    padding-top: 84px;
+    padding-bottom: 300px;
+    background-position: bottom right;
+    background-size: 280px;
+    @media only screen  and (min-width: 768px){
+        padding-top: 84px;
+        padding-bottom: 72px;
+        background-size: 400px;
+        background-position: bottom right;
+    }
+
+
+    h2{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        color: $darkBlue;
+        margin-bottom: 30px;
+    }
+
+    p{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        color: $darkBlue;
+        margin-bottom: 30px;
+        @media only screen  and (min-width: 768px){
+            max-width: 86%;
+        }
+    }
+
+    a.btn-primary{
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        @media only screen  and (min-width: 768px){
+            padding-left: 42px !important;
+            padding-right: 42px !important;
+        }
+    }
+}

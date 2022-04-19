@@ -1,0 +1,50 @@
+{
+	"name": "landing",
+	"version": "1.2.0",
+	"description": "sass, concatenation, code , autoprefixer, sourcemaps, browser-sync, git and gulp task runner",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \\\"Error: no test specified\\\" && exit 1"
+	},
+	"author": "Herald Flores",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"keywords": [
+		"gulp",
+		"boilerplate",
+		"babel"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.16.7",
+		"@babel/preset-env": "^7.16.8",
+		"@babel/register": "^7.17.7",
+		"autoprefixer": "10.4.2",
+		"babel-loader": "^8.2.3",
+		"del": "6.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-browserify": "^0.5.1",
+		"gulp-clean-css": "4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-cssmin": "^0.2.0",
+		"gulp-if": "3.0.0",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-minify-css": "^1.2.4",
+		"gulp-postcss": "9.0.1",
+		"gulp-sass": "^5.1.0",
+		"gulp-sourcemaps": "3.0.0",
+		"gulp-uglify": "^3.0.2",
+		"gulp-zip": "5.1.0",
+		"node-sass": "^7.0.1",
+		"webpack": "^5.66.0",
+		"webpack-stream": "^7.0.0"
+	},
+	"dependencies": {
+		"browser-sync": "^2.27.7",
+		"gulp-rename": "^2.0.0"
+	}
+}

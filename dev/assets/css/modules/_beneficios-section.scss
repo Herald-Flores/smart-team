@@ -1,0 +1,53 @@
+#beneficios{
+    .beneficios-group{
+        padding-top: 2rem;
+
+        .card-beneficios{
+            min-width: 30%;
+            padding: 20px;
+            border: 2px solid #CFE8FF;
+            box-sizing: border-box;
+            box-shadow: 16px 60px 166px rgba(0, 66, 165, 0.2);
+            border-radius: 5px;
+            margin-bottom:20px;
+            transition: ease .6s;
+            &:hover{
+                cursor: pointer;
+                background: $whiteBlue;
+            }
+            @media only screen and (min-width: 768px) {
+                margin-bottom:30px;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                height: 100% !important;
+                .card-icon{
+                    width: 25%;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    .card-img-top{
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                    }
+                }
+                .card-body{
+                    padding: 0 !important;
+                    width: 70%;
+                    height: 100% !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    .card-title{
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 20px;
+                        margin-bottom: 0 !important;
+                        color: $darkBlue;
+                    }
+                }
+            }
+        }
+    }
+}

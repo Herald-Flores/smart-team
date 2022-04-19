@@ -1,0 +1,111 @@
+#smarteam-section{
+    .svg-interactive{
+        max-width: 100%;
+        overflow-x: hidden;
+
+        svg{
+            margin-left: -85px;
+            @media only screen and (max-width: 767px){
+                max-width: 100%;
+                margin-left: 0;
+                height: auto;
+            }
+            @media only screen and (min-width: 768px){
+                max-width: 100%;
+                margin-left: 0;
+                height: auto;
+            }
+            #decoration-path{
+                .path-1{
+                    animation: movepath 18s linear infinite alternate;
+                }
+                .path-2{
+                    animation: movepathinverse 20s linear infinite alternate;
+                }
+            }
+
+            #circle-left, #circle-center, #circle-right{
+                .circle{
+                    transition: ease .3s;
+                }
+                &:hover, &:focus, &:active{
+                    cursor: pointer;
+                    .circle{
+                        r: 143.5;
+                        transition: ease .3s;
+                    }
+                }
+            }
+
+            
+            #number-one, #number-two, #number-three{
+                position: relative;
+                .circle{
+                    transition: ease .3s;
+                }
+                &:hover, &:focus, &:active{
+                    .circle{
+                        r: 25.5;
+                        cursor: pointer;
+                    }
+                    
+                }
+
+            }
+
+            #circle-left{
+                animation: top-bottom 11s linear infinite alternate;
+            }
+
+            #circle-center{
+                animation: top-bottom 14s linear infinite alternate;
+            }
+            #circle-right{
+                animation: top-bottom 16s linear infinite alternate;
+            }
+        }
+    }
+}
+
+@keyframes top-bottom {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(10px, 40px);
+    }
+
+    80% {
+        transform: translate(-10px, -40px);
+    }
+}
+
+@keyframes  movepathinverse{
+    0%, 100% {
+        transform: translate(-100px, 0);
+        
+    }
+
+    50% {
+        transform: translate(140px, 0);
+    }
+
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes movepath {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(150px, 0);
+    }
+
+    80% {
+        transform: translate(-110px, 0);
+    }
+}

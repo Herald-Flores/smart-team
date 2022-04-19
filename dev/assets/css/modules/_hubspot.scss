@@ -1,0 +1,180 @@
+#hubspot{
+    background: linear-gradient(180deg, #CFE8FF 55.73%, rgba(207, 232, 255, 0) 100%);
+
+    .video-play{
+        img{
+            &:hover{
+                box-shadow: -1px 9px 68px 7px #168df656;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .planes-list{
+        display: flex;
+        flex-direction: column;
+        @media only screen and (min-width: 767px)  {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .card{
+            max-width: 100%;
+            border: 0 !important;
+            padding: 0 !important;
+            border-radius: 5px !important;
+            height: max-content!important;
+            box-shadow: -1px 9px 68px 7px #168df656;
+            margin-bottom: 1.8rem;
+            @media only screen and (min-width: 767px)  {
+                min-width: 95%;
+                max-width: 95%;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
+            // @media only screen and (min-width: 767px)  {
+            //     min-width: 47.7%;
+            //     max-width: 47.7%;
+            //     margin-bottom: .8rem;
+            // }
+            @media only screen and (min-width: 992px)  {
+                min-width: 31%;
+                max-width: 31%;
+                margin-bottom: .8rem;
+            }
+
+            .card-header{
+                background-color: transparent !important;
+                padding: 0 !important;
+                border: 0 !important;
+                .heading{
+                    background-color: #168df621;
+                    border-top-left-radius: 5px !important;
+                    border-top-right-radius: 5px !important;
+                    padding: 40px 0 !important;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    h5{
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 26px;
+                        color: $blue;
+                    }
+                }
+
+                .content{
+                    padding-left: 48px !important;
+                    padding-right: 48px !important;
+                    padding-bottom: 2.2rem !important;
+                    p{
+                        color: $grayText;
+                    }
+                }
+            }
+
+            .caracteristicas{
+                h6{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: $darkBlue;
+                    margin-bottom: 1.3rem;
+                } 
+                h5{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 20px;
+                    
+                    color: $blue;
+                    text-transform: uppercase;
+                }
+                ul{
+                    color: $grayText;
+                    padding-left: 18px !important;
+                    margin-top: 1.3rem;
+                    margin-bottom: 1.3rem;
+                    &.list-enabled{
+                        li::marker {
+                            font-size: 150%;
+                            color: $turquoise;
+                        }
+                    }
+
+                    &.list-disabled{
+                        li::marker {
+                            font-size: 150%;
+                            color: $grayText;
+                        }
+                    }
+                }
+            }
+
+            .card-body{
+                color: $grayText;
+                padding-left: 48px !important;
+                padding-right: 48px !important;
+            }
+
+            &.active{
+                .card-header{
+                    .heading{
+                        background-color: $turquoise;
+                        h5{
+                            color: $white;
+                        }
+                    }
+
+                    .content{
+                        padding-bottom: 0 !important;
+
+                        .btn-secondary{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &.planes-list-sales{
+            .card{
+                @media only screen and (min-width: 992px)  {
+                    min-width: 31.2%;
+                    max-width: 31.2%;
+                    margin-bottom: .8rem;
+                }
+
+                .card-header{
+                    .content{
+                        padding-left: 35px !important;
+                        padding-right: 35px !important;
+                    }
+                }
+    
+                .card-body{
+                    color: $grayText;
+                    padding-left: 35px !important;
+                    padding-right: 35px !important;
+                }
+
+
+
+                &.active{
+                    .card-header{   
+                        .content{
+                            padding-bottom: 0 !important;
+                            ul{
+                                margin-bottom: 0 !important;
+                                padding-bottom: 0 !important;
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
