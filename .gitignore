@@ -47,7 +47,6 @@ dev/assets/js/*.min.js
 node_modules/
 
 ### Build folder ###
-build/
 prod/
 
 ### Resources Sketch folder ###
