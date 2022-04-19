@@ -1,4 +1,5 @@
 # landings Smarteam
+https://herald-flores.github.io/smart-team/
 
 ## Herald Flores dev guide quick Start
 ```
