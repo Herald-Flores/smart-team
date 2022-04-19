@@ -50,7 +50,7 @@
   font-display: swap;
 }
 body {
-  font-family: "Graphik", "Roboto";
+  font-family: "Roboto";
 }
 
 p {
@@ -60,14 +60,14 @@ p {
 }
 
 h1 {
-  font-family: "Graphik", "Roboto";
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 48px;
   line-height: 53px;
 }
 
 h2 {
-  font-family: "Graphik", "Roboto";
+  font-family: "Roboto";
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
